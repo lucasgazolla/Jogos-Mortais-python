@@ -1,5 +1,8 @@
 import os
 
+Colaboradores: Lucas Gazolla 1139819, Endrewell Favaretto 1139685
+
+
 # Conteúdo do README
 readme_content = Projeto Jogos Motais
 
