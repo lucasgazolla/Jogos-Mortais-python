@@ -1,3 +1,5 @@
+Colaboradores: Lucas Gazolla 1139819, Endrewell V. Favaretto 1139685
+
 #  Jogos Mortais Terminal (The Game)
 
 Este é um jogo de aventura textual e lógica desenvolvido em Python, focado em desafios de tomada de decisão, matemática e memória. O jogo utiliza comandos de sistema para criar uma experiência imersiva diretamente no terminal.
