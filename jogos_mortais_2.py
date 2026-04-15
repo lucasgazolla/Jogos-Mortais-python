@@ -27,7 +27,7 @@ print('''
 
 numero1 = random.randint(1,3)
 
-print(numero1) #apagar depois
+# print(numero1) #ative somente se quiser o gabarito para conferir
 
 resposta1 = int(input ("Um número entre 1 e 3 separa sua vida da sua morte. Qual é a sua escolha? "))
 
@@ -61,7 +61,7 @@ numero2 = random.randint(1,10)
 numero3 = random.randint(1,10)
 resposta2 = numero2 ** numero3
 
-print(resposta2) #apagar depois
+# print(resposta2) #ative somente se quiser o gabarito para conferir
  
 os.system("color 07")
 
@@ -107,7 +107,8 @@ time.sleep(5)
 os.system("cls")
 os.system("color 07")
 resultado3 = (resposta1 + resposta2) ** resposta1 - resposta2
-print(resultado3) #apagar depois
+
+# print(resultado3) #ative somente se quiser o gabarito para conferir
 
 resposta3 = int(input("Se prestou atenção até agora, Boa sorte: (resposta1 + resposta2) ** resposta1 - resposta2. Qual o resultado ? "))
 
@@ -129,7 +130,10 @@ os.system("cls")
 os.system("color 07")
 
 print("Preste muita atenção...")
-time.sleep(2)
+time.sleep(3)
+os.system("cls")
+print("Responda utilizando espaços somente entre os números...um passo em falso poderá causar o seu fim!!!")
+time.sleep(5)
 os.system("cls")
 
 memoria1 = random.randint(1,10)
@@ -217,3 +221,4 @@ else:
 ░░╚██╔╝░░╚█████╔╝╚█████╔╝███████╗  ██║░╚═╝░██║╚█████╔╝██║░░██║██║░░██║███████╗╚██████╔╝
 ░░░╚═╝░░░░╚════╝░░╚════╝░╚══════╝  ╚═╝░░░░░╚═╝░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚══════╝░╚═════╝░
 ''')
+    

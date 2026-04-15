@@ -1,39 +1,40 @@
-import os
+#  Jogos Mortais Terminal (The Game)
 
-Colaboradores: Lucas Gazolla 1139819, Endrewell Favaretto 1139685
+Este é um jogo de aventura textual e lógica desenvolvido em Python, focado em desafios de tomada de decisão, matemática e memória. O jogo utiliza comandos de sistema para criar uma experiência imersiva diretamente no terminal.
 
+## Descrição
 
-# Conteúdo do README
-readme_content = Projeto Jogos Motais
+Você assume o papel de um participante em um jogo de vida ou morte comandado por uma inteligência artificial. O objetivo é superar cinco desafios consecutivos. Um único erro encerra o programa imediatamente.
 
-Um jogo de mistério e lógica desenvolvido em Python. O desafio combina cálculos matemáticos, testes de memória e charadas de conversão de dados, tudo narrado por uma voz imersiva via **Edge TTS**.
+### Desafios incluídos:
+1.  **Sorte Pura:** Tente adivinhar o número entre 1 e 3.
+2.  **Cálculo de Potência:** Resolva uma operação exponencial gerada aleatoriamente.
+3.  **Fórmula Combinatória:** Utilize resultados de fases anteriores para resolver uma equação.
+4.  **Teste de Memória:** Memorize uma sequência de 5 números exibida por apenas 2 segundos.
+5.  **Enigma de Arquitetura:** Converta bits para Megabytes (MB).
 
-##  Sobre o Projeto
+## Como Executar
 
-O projeto utiliza a interface do terminal para criar uma atmosfera de tensão. Através de comandos de cor de sistema e efeitos sonoros, o jogador é guiado por fases onde o erro significa o fim da execução (a "morte" no jogo).
-
-###  Sistema de Voz
-O jogo utiliza a biblioteca `edge-tts` com a voz `pt-BR-AntonioNeural` para narrar as perguntas e provocar o jogador, garantindo uma experiência mais profunda do que apenas ler o texto na tela.
-
----
+1.  Certifique-se de ter o **Python 3** instalado.
+2.  O jogo foi projetado para o terminal do **Windows** (CMD ou PowerShell), pois utiliza comandos `os.system` para cores e limpeza de tela.
+3.  Abra o VS Code na pasta do projeto.
+4.  No terminal, execute:
+    ```bash
+    python nome_do_seu_arquivo.py
+    ```
 
 ##  Tecnologias Utilizadas
 
-* **Python 3.x**: Linguagem base.
-* **Edge-TTS**: Geração de voz neural da Microsoft (requer conexão com internet).
-* **Playsound**: Execução dos arquivos de áudio `.mp3`.
-* **Asyncio**: Para gerenciar a criação assíncrona dos áudios.
-* **Random/Time/OS**: Para lógica de jogo, temporização e manipulação do terminal.
+* **Linguagem:** Python 3
+* **Bibliotecas nativas:**
+    * `os`: Controle de interface (cores e `cls`).
+    * `time`: Gerenciamento de tempo e pausas dramáticas.
+    * `random`: Geração de números aleatórios para os desafios.
+    * `sys`: Manipulação do sistema e encerramento do processo.
 
----
+##  Interface Visual
 
-## Instalação e Configuração
-
-Para rodar este projeto, você precisará instalar as dependências de áudio. Siga os passos abaixo:
-
-1. **Clone o repositório ou baixe o arquivo `.py`.**
-
-2. **Instale as bibliotecas necessárias:**
-   Abra o seu terminal e execute:
-   ```bash
-   pip install edge-tts playsound==1.2.2
+O jogo utiliza códigos de cores do Windows para indicar o estado do jogador:
+*  **Verde (`0a`):** Sucesso / Sobrevivência.
+*  **Vermelho (`04` / `0c`):** Perigo / Morte.
+*  **Branco (`07`):** Texto padrão e perguntas.
